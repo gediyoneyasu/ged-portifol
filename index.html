@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gediyon-Eyasu Personal Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-logo" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+                <img src="image/images/gedbg.png" alt="Gediyon Logo"
+                    style="height: 40px; width: 40px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.15); background: #1d1d1d;" />
+                <h2 class="logo-text"
+                    style="font-family: 'Pacifico', cursive; color: wheat; font-size: 2rem; letter-spacing: 2px; margin: 0; text-shadow: 1px 2px 8px #e0c097;">
+                    <span style="color: aquamarine; font-weight: bold; font-style: italic; font-size: 38px;">G</span>ed
+                </h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero-section">
+        <div class="section-content">
+            <div class="hero-details">
+                <h2 class="title">Welcome to Gediyon's Portfolio</h2>
+                <h3 class="subtitle">Get Solutions for your Problems!</h3>
+
+                <div class="allbody">
+                    <div class="continer">
+                        <span class="text first-text" style="color: burlywood;">I'm a</span>
+                        <span class="text second-text" style="color: aqua;"></span>
+                    </div>
+                </div>
+                <div class="buttons" style="padding: 35px;">
+                    <a href="#menu" class="button order-now">View My Projects</a>
+                    <a href="#contact" class="button contact-us">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <img src="image/images/image copy 2.png" alt="Gediyon Eyasu" class="hero-image" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about-section" id="about">
+        <div class="section-content">
+            <div class="about-image-wrapper">
+                <img src="image/images/ged8.png" alt="Gediyon Eyasu" class="about-image" />
+            </div>
+            <div class="about-details">
+                <h2 class="section-title">About Me</h2>
+                <p class="text">Hello, my name is Gediyon-Eyasu. I am an Ethiopian programmer specializing in
+                    website development, mobile app development, and graphic design. I create modern, responsive
+                    solutions for businesses and individuals.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects-section" id="menu" style="background-color: #3b3838;">
+        <div class="section-content">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Here are some of my recent web development projects. Click to explore live
+                demos and source code.</p>
+            <div class="projects-grid">
+                <!-- Project 1: Exodus Construction -->
+                <div class="project-box">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="project-title">Exodus Construction</h3>
+                    <p class="project-desc">A professional website for a construction consultancy company with
+                        service details, portfolio, and contact information.</p>
+                    <div class="project-links">
+                        <a href="https://gediyoneyasu.github.io/EXODUS/" class="project-button live-demo"
+                            target="_blank" rel="noopener">
+                            <i class="fa-solid fa-rocket"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/gediyoneyasu/EXODUS" class="project-button source-code"
+                            target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Zeatsat Construction -->
+                <div class="project-box">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-hammer"></i>
+                    </div>
+                    <h3 class="project-title">Zeatsat Construction</h3>
+                    <p class="project-desc">A responsive construction company website featuring services, projects
+                        gallery, and contact form.</p>
+                    <div class="project-links">
+                        <a href="https://gediyoneyasu.github.io/Zeatsat-zc-/" class="project-button live-demo"
+                            target="_blank" rel="noopener">
+                            <i class="fa-solid fa-rocket"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/gediyoneyasu/Zeatsat-zc-" class="project-button source-code"
+                            target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Snake Game -->
+                <div class="project-box">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <h3 class="project-title">Classic Snake Game</h3>
+                    <p class="project-desc">A browser-based implementation of the classic Snake game using HTML5,
+                        CSS3, and JavaScript with score tracking.</p>
+                    <div class="project-links">
+                        <a href="https://gediyoneyasu.github.io/snakegame/" class="project-button live-demo"
+                            target="_blank" rel="noopener">
+                            <i class="fa-solid fa-rocket"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/gediyoneyasu/snakegame" class="project-button source-code"
+                            target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: Portfolio -->
+                <div class="project-box">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <h3 class="project-title">Previous Portfolio</h3>
+                    <p class="project-desc">An earlier version of my personal portfolio showcasing a different design
+                        approach and layout style.</p>
+                    <div class="project-links">
+                        <a href="https://gediyoneyasu.github.io/my-portfolio/" class="project-button live-demo"
+                            target="_blank" rel="noopener">
+                            <i class="fa-solid fa-rocket"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/gediyoneyasu/my-portfolio" class="project-button source-code"
+                            target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact-section" id="contact" style="background-color: #3f3737; color: rgb(193, 202, 210);">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="section-content" id="get">
+            <ul class="contact-info-list">
+                <li class="contact-info">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <p>Ethiopia, Central Ethiopia, Hossana</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>gediyoneyasu26@gmail.com</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>(+251) 953861812</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Saturday: 10:00 AM - 2:00 PM</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Sunday: Closed</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-globe"></i>
+                    <p>www.gediyoneyasu.com</p>
+                </li>
+            </ul>
+            <!--  Firebase -->
+            <form class="contact-form" id="firebaseContactForm">
+                <input type="text" name="name" id="nameInput" placeholder="Your name" class="form-input" required />
+                <input type="email" name="email" id="emailInput" placeholder="Your email" class="form-input" required />
+                <textarea name="message" id="messageInput" placeholder="Your message" class="form-input" rows="5"
+                    required></textarea>
+                <button type="submit" class="button submit-button" style="background-color: rgb(59, 185, 185);">Send
+                    Message</button>
+            </form>
+            <div id="form-message"
+                style="display:none; margin-top: 10px; text-align: center; font-weight: bold; padding: 10px; border-radius: 5px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer-section">
+        <div class="section-content">
+            <p class="copyright-text">© 2024 Gediyon Eyasu Personal Portfolio</p>
+            <div class="social-link-list">
+                <a href="https://web.facebook.com/me/" class="social-link" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://t.me/Gediyoneyasu" class="social-link" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="tel:+251953861812" class="social-link"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://www.instagram.com/gediyoneyasu" class="social-link" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/Gediyoneyasu" class="social-link" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="mailto:gediyoneyasu26@gmail.com" class="social-link" target="_blank" rel="noopener">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </div>
+            <p class="policy-text">
+                <a href="#" class="policy-link">Privacy Policy</a>
+                <span class="separator">•</span>
+                <a href="#" class="policy-link">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <!-- Firebase SDK (use latest v8 or v9 compat for your current code style) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_PROJECT.firebaseapp.com",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_PROJECT.appspot.com",
+            messagingSenderId: "YOUR_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        // Initialize Firebase (namespaced/compat mode)
+        firebase.initializeApp(firebaseConfig);
+
+        // Expose db globally for your form code
+        window.db = firebase.firestore();
+    </script>
+</body>
+
+</html>
