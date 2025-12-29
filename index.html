@@ -176,53 +176,53 @@
     </section>
 
     <!-- Contact section -->
-    <section class="contact-section" id="contact" style="background-color: #3f3737; color: rgb(193, 202, 210);">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="section-content" id="get">
-            <ul class="contact-info-list">
-                <li class="contact-info">
-                    <i class="fa-solid fa-location-crosshairs"></i>
-                    <p>Ethiopia, Central Ethiopia, Hossana</p>
-                </li>
-                <li class="contact-info">
-                    <i class="fa-regular fa-envelope"></i>
-                    <p>gediyoneyasu26@gmail.com</p>
-                </li>
-                <li class="contact-info">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>(+251) 953861812</p>
-                </li>
-                <li class="contact-info">
-                    <i class="fa-regular fa-clock"></i>
-                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-                </li>
-                <li class="contact-info">
-                    <i class="fa-regular fa-clock"></i>
-                    <p>Saturday: 10:00 AM - 2:00 PM</p>
-                </li>
-                <li class="contact-info">
-                    <i class="fa-regular fa-clock"></i>
-                    <p>Sunday: Closed</p>
-                </li>
-                <li class="contact-info">
-                    <i class="fa-solid fa-globe"></i>
-                    <p>www.gediyoneyasu.com</p>
-                </li>
-            </ul>
-            <!--  Firebase -->
-            <form class="contact-form" id="firebaseContactForm">
-                <input type="text" name="name" id="nameInput" placeholder="Your name" class="form-input" required />
-                <input type="email" name="email" id="emailInput" placeholder="Your email" class="form-input" required />
-                <textarea name="message" id="messageInput" placeholder="Your message" class="form-input" rows="5"
-                    required></textarea>
-                <button type="submit" class="button submit-button" style="background-color: rgb(59, 185, 185);">Send
-                    Message</button>
-            </form>
-            <div id="form-message"
-                style="display:none; margin-top: 10px; text-align: center; font-weight: bold; padding: 10px; border-radius: 5px;">
-            </div>
+   
+   <!-- Contact section -->
+<section class="contact-section" id="contact" style="background-color: #3f3737; color: rgb(193, 202, 210);">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="section-content" id="get">
+        <ul class="contact-info-list">
+            <li class="contact-info">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <p>Ethiopia, Central Ethiopia, Hossana</p>
+            </li>
+            <li class="contact-info">
+                <i class="fa-regular fa-envelope"></i>
+                <p>gediyoneyasu26@gmail.com</p>
+            </li>
+            <li class="contact-info">
+                <i class="fa-solid fa-phone"></i>
+                <p>(+251) 953861812</p>
+            </li>
+            <li class="contact-info">
+                <i class="fa-regular fa-clock"></i>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+            </li>
+            <li class="contact-info">
+                <i class="fa-regular fa-clock"></i>
+                <p>Saturday: 10:00 AM - 2:00 PM</p>
+            </li>
+            <li class="contact-info">
+                <i class="fa-regular fa-clock"></i>
+                <p>Sunday: Closed</p>
+            </li>
+            <li class="contact-info">
+                <i class="fa-solid fa-globe"></i>
+                <p>www.gediyoneyasu.com</p>
+            </li>
+        </ul>
+
+        <form class="contact-form" id="firebaseContactForm">
+            <input type="text" name="name" id="nameInput" placeholder="Your name" class="form-input" required />
+            <input type="email" name="email" id="emailInput" placeholder="Your email" class="form-input" required />
+            <textarea name="message" id="messageInput" placeholder="Your message" class="form-input" rows="5" required></textarea>
+            <button type="submit" class="button submit-button" style="background-color: rgb(59, 185, 185);">Send Message</button>
+        </form>
+
+        <div id="form-message" style="display:none; margin-top: 10px; text-align: center; font-weight: bold; padding: 10px; border-radius: 5px;">
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer section -->
     <footer class="footer-section">
@@ -257,24 +257,20 @@
     <script src="js/script.js"></script>
     <!-- Firebase SDK (use latest v8 or v9 compat for your current code style) -->
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-
-    <script>
-        const firebaseConfig = {
-            apiKey: "YOUR_API_KEY",
-            authDomain: "YOUR_PROJECT.firebaseapp.com",
-            projectId: "YOUR_PROJECT_ID",
-            storageBucket: "YOUR_PROJECT.appspot.com",
-            messagingSenderId: "YOUR_SENDER_ID",
-            appId: "YOUR_APP_ID"
-        };
-
-        // Initialize Firebase (namespaced/compat mode)
-        firebase.initializeApp(firebaseConfig);
-
-        // Expose db globally for your form code
-        window.db = firebase.firestore();
-    </script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyD0ZfZ4Q2pVUbWqX5vJqKkJ5m9K8lL9pQ0",
+    authDomain: "portfolio-contact-form-123.firebaseapp.com",
+    projectId: "portfolio-contact-form-123",
+    storageBucket: "portfolio-contact-form-123.appspot.com",
+    messagingSenderId: "1234567890",
+    appId: "1:1234567890:web:abcdef1234567890"
+  };
+  firebase.initializeApp(firebaseConfig);
+  window.db = firebase.firestore();
+</script>
+  
 </body>
 
 </html>
